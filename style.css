@@ -89,12 +89,10 @@ body {
   border: 2px solid orange;
 }
 
-/* hide on mobile */
+/* signin / cart */
 .nav-signin,
 .nav-return {
-  display: block;
   font-size: 0.75rem;
-
 }
 
 .nav-cart {
@@ -224,16 +222,83 @@ footer {
   font-size: 0.7rem;
 }
 
+/* ================= MOBILE (AMAZON STYLE) ================= */
+@media (max-width: 767px) {
+
+  .navbar {
+    padding: 6px 8px;
+  }
+
+  .nav-logo {
+    width: 90px;
+    height: 40px;
+  }
+
+  .nav-signin,
+  .nav-return,
+  .nav-address {
+    display: none;
+  }
+
+  .nav-cart {
+    margin-left: auto;
+  }
+
+  .nav-search {
+    margin: 6px 0 4px 0;
+    height: 38px;
+  }
+
+  .panel {
+    padding: 6px 8px;
+    font-size: 0.8rem;
+  }
+
+  .hero-section {
+    height: 140px;
+  }
+
+  .hero-message {
+    font-size: 0.7rem;
+    padding: 8px;
+    margin: 6px;
+  }
+
+  .shop-section {
+    gap: 10px;
+    padding: 10px;
+  }
+
+  .box {
+    padding: 12px;
+  }
+
+  .box-image {
+    height: 180px;
+    margin: 8px 0;
+  }
+
+  .foot-panel1 {
+    height: 45px;
+    font-size: 0.8rem;
+  }
+
+  .foot-panel2 {
+    padding: 15px;
+    gap: 15px;
+  }
+
+  .foot-panel4 {
+    font-size: 0.65rem;
+    padding: 10px;
+  }
+}
+
 /* ================= TABLET ================= */
 @media (min-width: 768px) {
 
   .nav-search {
     width: 60%;
-  }
-
-  .nav-signin,
-  .nav-return {
-    display: block;
   }
 
   .panel-ops {
